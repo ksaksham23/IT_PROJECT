@@ -1,28 +1,3 @@
-/* .navbar {
-  background-color: rgba(51, 51, 51, 0.5);  Transparent black 
-  color: white;
-  padding: 10px 20px;
-  position: relative;
-  z-index: 2; /* Set higher z-index to keep the navbar above the background image 
-  margin-bottom: 20px;
-}
-
-.navbar-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-link {
-  display: inline;
-  margin-right: 20px;
-}
-
-.navbar-link a {
-  text-decoration: none;
-  color: white;
-} */
-
 .navbar {
   background-color: #333;
   color: #fff;
@@ -30,15 +5,14 @@
   position: relative;
   position: sticky;
   z-index: 2; /*Set higher z-index to keep the navbar above the background image */
-  margin-bottom: 20px;
 }
 
-.navbar-links {
+.nav-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between; /* Push links to the edges */
+  justify-content: space-between; /* Push links to the edges  */
 }
 
 .navbar-link {
@@ -46,15 +20,42 @@
   margin-right: 20px;
 }
 
-.navbar-link:last-child {
-  margin-right: 0; /* Remove margin from the last link */
+.title-link {
+  margin-left: 20px;
+  width: 60%;
 }
 
-.navbar-link a {
+#title {
+  font-size: 20px;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link a {
   text-decoration: none;
   color: white;
 }
 
-.navbar-link.active {
-  margin-left: auto; /* Push the active link to the right */
+/* .nav-link.active {
+  margin-left: auto;
+} */
+
+.active {
+  color: #1155ff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .title-link {
+    width: auto;
+  }
+
+  .navbar-link {
+    margin-right: 10px;
+  }
 }

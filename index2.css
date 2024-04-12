@@ -51,6 +51,7 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Ensure overflow is hidden to prevent scrollbars */
 }
 
 .slideshow li {
@@ -65,6 +66,10 @@ p {
   background-repeat: no-repeat;
   opacity: 1; /* Change opacity to 1 to make the background image appear */
   z-index: -1; /* Set a lower z-index for the background image */
+}
+
+.slideshow li.active {
+  opacity: 1; /* Show the active slide */
 }
 
 @keyframes imageAnimation {
